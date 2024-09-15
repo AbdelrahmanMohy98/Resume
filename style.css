@@ -23,6 +23,7 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    overview: hidden;
 }
 
 header img {
@@ -44,6 +45,7 @@ header p {
 }
 
 nav ul {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;
