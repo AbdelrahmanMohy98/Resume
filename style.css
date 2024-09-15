@@ -49,6 +49,7 @@ nav ul {
     gap: 20px;
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -78,10 +79,6 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-#download-cv:hover {
-    background-color: #333;
-}
-
 /* Dark/Light Theme Toggle Button */
 button#theme-toggle {
     margin-top: 10px;
@@ -93,10 +90,6 @@ button#theme-toggle {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-button#theme-toggle:hover {
-    background-color: #333;
 }
 
 main {
