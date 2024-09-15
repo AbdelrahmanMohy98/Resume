@@ -1,4 +1,4 @@
-/* Google Font and basic styling */
+/* Default Light Theme */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -51,10 +51,6 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -69,6 +65,40 @@ nav ul li a:hover {
     background-color: #4CAF50;
 }
 
+/* Download CV Button */
+#download-cv {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#download-cv:hover {
+    background-color: #333;
+}
+
+/* Dark/Light Theme Toggle Button */
+button#theme-toggle {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button#theme-toggle:hover {
+    background-color: #333;
+}
+
 main {
     margin-top: 20px;
 }
@@ -81,17 +111,6 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #4CAF50;
-}
-
-section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -102,21 +121,33 @@ footer {
     width: 100%;
 }
 
-footer p {
-    margin: 0;
+/* Dark Theme */
+body.dark-theme {
+    background-color: #222;
+    color: #f5f5f5;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
+body.dark-theme header {
+    background-color: #555;
+}
 
-    header {
-        text-align: center;
-    }
+body.dark-theme section {
+    background-color: #333;
+    color: #f5f5f5;
+}
 
-    nav ul {
-        flex-direction: column;
-    }
+body.dark-theme footer {
+    background-color: #555;
+}
+
+body.dark-theme button#theme-toggle {
+    background-color: #555;
+}
+
+body.dark-theme nav ul li a {
+    color: #f5f5f5;
+}
+
+body.dark-theme nav ul li a:hover {
+    background-color: #4CAF50;
 }
